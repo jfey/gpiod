@@ -46,8 +46,8 @@ const (
 
 // GPIO aliases to J8 pins
 const (
-	_ = iota
-	_
+	GPIO0 = iota
+	GPIO1
 	GPIO2
 	GPIO3
 	GPIO4

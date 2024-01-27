@@ -16,8 +16,14 @@ var patterns = []struct {
 	val  int
 	err  error
 }{
-	{"gpio0", 0, rpi.ErrInvalid},
-	{"gpio1", 0, rpi.ErrInvalid},
+	{"gpio0", 0, nil},
+	{"gpio00", 0, nil},
+	{"GPIO0", 0, nil},
+
+	{"gpio1", 0, nil},
+	{"gpio01", 0, nil},
+	{"GPIO1", 0, nil},
+
 	{"gpio2", 2, nil},
 	{"gpio02", 2, nil},
 	{"GPIO2", 2, nil},
